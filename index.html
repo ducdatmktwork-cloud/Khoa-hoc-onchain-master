@@ -228,7 +228,7 @@ const App = () => {
             {[
               { 
                 icon: <ShieldAlert size={32} className="text-red-500" />, 
-                title: "Thanh khoản cho Cá voi", 
+                title: "Thanh khoán cho Cá voi", 
                 desc: "Bạn nhảy vào khi FOMO đẩy giá đỉnh, thực tế bạn đang 'mua lại' hàng chốt lời của quỹ lớn." 
               },
               { 
@@ -405,7 +405,7 @@ const App = () => {
       </footer>
 
       {/* Animations Custom CSS */}
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
         
         @keyframes marquee {
@@ -453,7 +453,7 @@ const App = () => {
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
-      `}</style>
+      ` }} />
     </div>
   );
 };
